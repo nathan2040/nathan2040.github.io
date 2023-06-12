@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/discography.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Discography</title>
+</head>
+<body>
+    <div class="pill-nav" id="pill-nav">
+        <a href="index.html"><button class="btn">
+            Home
+        </button></a>
+        <a href="discography.html"><button class="btn">
+            Music
+        </button></a>
+        <a href="socials.html"><button class="btn">
+            Socials
+        </button></a>
+        <a href="shop.html"><button class="btn">
+            Shop
+        </button></a>
+    </div>
+    <div class="mini-menu">
+        <img src="/images/menu.svg" class="openbtn" onclick="openNav()">
+    </div>
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Music</a>
+        <a href="#">Socials</a>
+        <a href="#">Shop</a>
+      </div>
+    <div class="mainMusic">
+        <div class="mainMusicAlbum">
+            <img src="/images/mix3.png" id="featureAlbum">
+        </div>
+        <div class="mainMusicInfo">
+            <h1 id="albumTitle">A Mixtape 3.0</h1>
+            <button id="streamButton">Stream / Download</button>
+        </div>
+    </div>
+
+    <div class="subMusic">
+            <div class="albumRow">
+              <img src="/images/break.png" class="subMusicAlbum" onclick="changeAlbum('break', 'BREAK')"/>
+              <img src="/images/mix3.png" class="subMusicAlbum"  onclick="changeAlbum('mix3', 'A MIXTAPE 3')">
+              <img src="/images/lgpb.png" class="subMusicAlbum"  onclick="changeAlbum('lgpb', 'LGPB')">
+            </div>
+            <div class="albumRow">
+              <img src="/images/bc.png" class="subMusicAlbum"  onclick="changeAlbum('bc', 'BC2020')"> 
+              <img src="/images/mix2.png" class="subMusicAlbum" onclick="changeAlbum('mix2','A MIXTAPE 2')">
+              <img src="/images/mix.png" class="subMusicAlbum" onclick="changeAlbum('mix', 'A MIX TAPE')">
+            </div>  
+    </div>
+
+    <div class="footer">
+        <div style="display: block;">
+            <p>All Rights Reserved</p>
+        </div>
+        <img src="/images/logo-facebook.svg">
+        <img src="/images/logo-instagram.svg">
+        <img src="/images/logo-twitter.svg">
+        <img src="/images/logo-youtube.svg">
+    </div>
+    <script src="/javascript/main.js"></script>
+    
+</body>
+</html>
